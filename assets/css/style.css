@@ -1,6 +1,7 @@
 
-	
- body {
+	/* https://viktoriazv.github.io/Minto/ */
+
+body {
 font-size: 30px;
 }
  
@@ -66,6 +67,12 @@ font-size: 30px;
     align-items: center;
 }
 
+.logo__img{
+    width: auto;
+    max-width:100%;
+    height:auto;
+}
+
 .logo__text {
     margin-left: 15px;
     
@@ -79,12 +86,13 @@ font-size: 30px;
 .nav {
     display: flex;
 
+    /* justify-content: center; */
+    align-items: center; /* vertikal */
     margin-bottom: 11px;
-    margin-right: 1px;
 }
 
 .nav__link {
-    margin-left: 69px;
+    margin-left: 65px;
 
     text-decoration: none;
     font-size: 19px;
@@ -95,13 +103,24 @@ font-size: 30px;
 
 .nav__link__img {
     display: inline;
+    fill:rgb(156, 145, 176);
+    transition: 0.5s;
 }
 
 .nav__link__text {
     display: inline;
     margin-left: 2px;
+    transition: 0.5s;
 }
 
+.nav__link:hover .nav__link__text {
+    color:#231044;
+    transition: 0.5s;
+}
+.nav__link:hover .nav__link__img {
+    fill:#231044;
+    transition: 0.5s;
+}
 
 .intro{
     position: relative;
@@ -143,6 +162,10 @@ font-size: 30px;
     position: absolute;
     bottom: 20px;
     left: 5px;
+    width: 22px;
+    height: 32px;
+    /* ширина и высота просмотра, а не картинки */
+    
 }
 
 .arrow__right {
@@ -162,19 +185,22 @@ font-size: 30px;
     position: absolute;
     bottom: 20px;
     right: 5px;
+    width: 22px;
+    height: 32px;
 }
 
-/* .intro__text {
-    margin: 0 auto;
-    width: 63.7%;
-    text-align: center;
-} */
+
+
+
+.intro__text {
+    padding: 0 15px;
+}
 
 .intro__title {
     display: block;
 
-    font-size: 7.8em; 
-    /* font-size: 117px; */
+    /* font-size: 7.8em;  */
+    font-size: 117px;
     line-height: 75px;
     font-weight: 400;
     color: #fbfbfb;  
@@ -208,7 +234,7 @@ font-size: 30px;
     display: block;
 
     margin: 0 auto;
-    margin-bottom: 7px;
+    margin-bottom: 18px;
 
     width: 98%;
     max-width: 1020px;
@@ -269,6 +295,7 @@ font-size: 30px;
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
     margin-bottom: 40px;
     padding: 0 28px;
@@ -280,7 +307,6 @@ font-size: 30px;
 }
 
 .about__content {
-    margin-top: 20px;
     width: 64%;
 }
 
@@ -303,8 +329,8 @@ font-size: 30px;
 .about__link {
     position: absolute;
     display: block;
-    bottom:0;
-    right: 5px;
+    bottom: -22px;
+    right: 13px;
 
     margin: 0;
 
@@ -347,15 +373,15 @@ font-size: 30px;
     margin-bottom: 50px;
 }
 
-.featured__title {
-    position: relative;
+.featured__upper {
     display: flex;
+    justify-content: space-between;
     margin-bottom: 36px;
     width: 100%;
 }
 
 .featured__text {
-    width: 31%; 
+    display: block;
     font-size: 23px;
     line-height: 36px;
     font-weight: 400;
@@ -370,16 +396,23 @@ font-size: 30px;
 }
 
 .featured__border{
+    width: 68%;
+    position: relative;
+    float: right;
+
+}
+
+.featured__border__inner{
     position: absolute;
     right: 0;
-    top: 50%;
-
-    width: 68%;
+    top: 55%;
+    transform: translate3d(0,-50%,0);
+    width: 100%;
 
     border-top: 1px #e1e1e1 dotted;
 }
 
-.featured__border::before {
+.featured__border__inner::before {
     content: '';
     display: block;
 
@@ -392,7 +425,7 @@ font-size: 30px;
     border-top: 1px #e1e1e1 dotted;
 }
 
-.featured__border::after {
+.featured__border__inner::after {
     content: '';
     display: block;
 
@@ -417,7 +450,7 @@ font-size: 30px;
     justify-content:center;
 
     width: 25%;
-    padding: 15px 0;
+    padding: 15px 10px;
     background-color: #f4f4f4;
     border: 1px #dddddd solid;
     border-right: 0px;
@@ -438,8 +471,10 @@ font-size: 30px;
     display: flex;
     align-items: center;
 
+    margin-bottom: 10px;
+
     width: 100%;
-    height: 100px;
+    height: 80px;
 
     background-color: #e6e6e6;
 }
@@ -447,9 +482,12 @@ font-size: 30px;
 .footer__inner {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    margin: 0 auto;
-    width: 1020px;
+    margin:  auto;
+    width: 78.5%;
+    max-width: 1020px;
+
 }
 
 .footer__text {
@@ -469,13 +507,15 @@ font-size: 30px;
 
 .footer__social {
     display: flex;
-    width: 90px;
+
 }
 
 .footer__social__item {
     cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-left: 15px;
+    z-index: 10;
 }
 
-@media (max-width:1230px) {
 
-}

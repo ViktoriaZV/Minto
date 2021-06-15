@@ -66,3 +66,4 @@ img{
   max-width:100%;
   height:auto;
 }
+img {transform: translatez(0);}

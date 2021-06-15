@@ -14,6 +14,9 @@
 
 @media (max-width:990px) {
 
+    .nav {
+        display: none;
+    }
     .conteiner {
         width: 85%;
     }
@@ -52,6 +55,18 @@
         width: 95%;
     }
 
+    .header {
+        margin: 26px 0 11px 0;
+    }
+
+    .logo {
+        width: 215px;
+    }
+
+    .logo__text {
+        font-size: 2.1em;
+    }
+
     .intro {
         height: 50vh;
     }
@@ -82,7 +97,6 @@
 
     .сompany__text {
         width: 100%;
-        /* padding: 0 15px; */
         font-size: 17px;
         line-height: 26px;
     }
@@ -143,6 +157,13 @@
 }
 
 @media (max-width: 575px) {
+
+    .logo {
+        width: 200px;
+    }
+    .logo__text {
+        font-size: 1.9em;
+    }
 
 /* intro */
 
@@ -205,8 +226,8 @@
     }
 
     .about__text {
-    font-size: 9px;
-    line-height: 15px;
+        font-size: 9px;
+        line-height: 15px;
     } 
 
     .about__link__text {
@@ -261,6 +282,14 @@
 
 @media (max-width: 414px) { 
 
+    .logo {
+        width: 168px;
+    }
+    .logo__text {
+        font-size: 1.6em;
+        margin-left: 8px;
+    }
+
     .intro__title {
         line-height: 76px;
         font-size: 79px;
@@ -297,72 +326,82 @@
     .сompany__text {
     font-size: 11px;
     line-height: 18px;
+    }
+    .сompany::before {
+        margin-bottom: 0px;
+    }
+
+    .сompany::after {
+        margin-top: 3px;
+    }
+
+    .about__title {
+        line-height: 28px;
+        font-size: 20px;
+    }
+
+    .about__text {
+        font-size: 7px;
+        line-height: 11px;
+    }
+
+    .about__link__text {
+        font-size: 6px;
+        margin: 0;
+    }
+
+    .about__link__arrow {
+        width: 6px;
+        height: 3px;
+    }
+
+    .about__link:hover .about__link__text {
+        font-size: 7px;
+    }
+
+    .about__link:hover .about__link__arrow {
+        width: 6px;
+        height: 3px;
+    }
+
+    .featured__text {
+        font-size: 12px;
+    }
+
+
+    .footer {
+        height: 27px;
+    }
+
+    .footer__text {
+        font-size: 7px;
+    }
+
+    .footer__text > p {
+        font-size: 8px;
+    }
+
+    .footer__social__item {
+        width: 12px;
+        height: 16px;
+        margin-left: 6px;
+    }
 }
-.сompany::before {
-    margin-bottom: 0px;
-}
-
-.сompany::after {
-    margin-top: 3px;
-}
-
-.about__title {
-    line-height: 28px;
-    font-size: 20px;
-}
-
-.about__text {
-    font-size: 7px;
-    line-height: 11px;
-}
-
-.about__link__text {
-    font-size: 6px;
-    margin: 0;
-}
-
-.about__link__arrow {
-    width: 6px;
-    height: 3px;
-}
-
-.about__link:hover .about__link__text {
-    font-size: 7px;
-}
-
-.about__link:hover .about__link__arrow {
-    width: 6px;
-    height: 3px;
-}
-
-.featured__text {
-    font-size: 12px;
-}
 
 
-.footer {
-    height: 27px;
-}
-
-.footer__text {
-    font-size: 7px;
-}
-
-.footer__text > p {
-    font-size: 8px;
-}
-
-.footer__social__item {
-    width: 12px;
-    height: 16px;
-    margin-left: 6px;
-}
-
-
-
-}
 
 @media (max-width: 350px) { 
+
+    .header {
+        margin: 18px 0 4px 0;
+    }
+    .logo {
+        width: 110px;
+    }
+    .logo__text {
+        font-size: 1em;
+        margin-left: 6px;
+    }
 
     .intro__title {
         line-height: 66px;
@@ -413,40 +452,38 @@
     }
 
     .about__text {
-    font-size: 5px;
-    line-height: 9px;
+        font-size: 5px;
+        line-height: 9px;
 }
 
-.featured {
-    margin-bottom: 25px;
-}
+    .featured {
+        margin-bottom: 25px;
+    }
 
-.featured__text {
-    font-size: 9px;
-}
+    .featured__text {
+        font-size: 9px;
+    }
 
-.partners__item {
-    padding: 2px 7px;
-}
+    .partners__item {
+        padding: 2px 7px;
+    }
 
+    .footer {
+        height: 21px;
+    }
 
+    .footer__text {
+        font-size: 5px;
+    }
 
-.footer {
-    height: 21px;
-}
+    .footer__text > p {
+        font-size: 5px;
+    }
 
-.footer__text {
-    font-size: 5px;
-}
-
-.footer__text > p {
-    font-size: 5px;
-}
-
-.footer__social__item {
-    width: 10px;
-    height: 10px;
-    margin-left: 3px;
-}
+    .footer__social__item {
+        width: 10px;
+        height: 10px;
+        margin-left: 3px;
+    }
 
 }

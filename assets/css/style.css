@@ -1,5 +1,5 @@
 
-	/* https://viktoriazv.github.io/Minto/ */
+	
 
 body {
 font-size: 30px;
@@ -67,11 +67,6 @@ font-size: 30px;
     align-items: center;
 }
 
-.logo__img{
-    width: auto;
-    max-width:100%;
-    height:auto;
-}
 
 .logo__text {
     margin-left: 15px;
@@ -189,9 +184,6 @@ font-size: 30px;
     height: 32px;
 }
 
-
-
-
 .intro__text {
     padding: 0 15px;
 }
@@ -286,7 +278,6 @@ font-size: 30px;
     font-weight: 700;
     text-indent: 0.5em;
 }
-
 
 .about {
     width: 100%;

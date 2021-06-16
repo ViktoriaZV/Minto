@@ -81,8 +81,7 @@ font-size: 30px;
 .nav {
     display: flex;
 
-    /* justify-content: center; */
-    align-items: center; /* vertikal */
+    align-items: center; 
     margin-bottom: 11px;
 }
 
@@ -96,26 +95,28 @@ font-size: 30px;
     font-family: 'Segoe UI', sans-serif;
 }
 
-.nav__link__img {
-    display: inline;
+.nav__img {
+    display: inline-block;
     fill:rgb(156, 145, 176);
     transition: 0.5s;
 }
 
-.nav__link__text {
-    display: inline;
+.nav__text {
+    display: inline-block;
     margin-left: 2px;
     transition: 0.5s;
 }
 
-.nav__link:hover .nav__link__text {
+.nav__link:hover .nav__text {
     color:#231044;
     transition: 0.5s;
 }
-.nav__link:hover .nav__link__img {
+.nav__link:hover .nav__img {
     fill:#231044;
     transition: 0.5s;
 }
+
+/* intro */
 
 .intro{
     position: relative;
@@ -140,51 +141,44 @@ font-size: 30px;
     background-size: cover;
 }
 
-.arrow__left {
+
+/* arrow  intro */
+
+
+.arrow {
     position: absolute;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+
+    width: 35px;
+    height: 68px;
+
+    background-color: #7b699a;
+    cursor: pointer;
+}
+
+.arrow_left {
     left: 0;
-    top: 50%;
-    transform: translate3d(0, -50%, 0);
-
-    width: 35px;
-    height: 68px;
-
-    background-color: #7b699a;
-    cursor: pointer;
 }
 
-.arrow__svg__left {
-    position: absolute;
-    bottom: 20px;
-    left: 5px;
-    width: 22px;
-    height: 32px;
-    /* ширина и высота просмотра, а не картинки */
-    
-}
-
-.arrow__right {
-    position: absolute;
+.arrow_right {
     right: 0;
-    top: 50%;
-    transform: translate3d(0, -50%, 0);
-
-    width: 35px;
-    height: 68px;
-
-    background-color: #7b699a;
-    cursor: pointer;
 }
 
-.arrow__svg__right {
+.arrow__img{
+    margin: auto;
+
     position: absolute;
-    bottom: 20px;
-    right: 5px;
+    top:0;
+    right: 0;
+    bottom:0;
+    left:0;
+
     width: 22px;
-    height: 32px;
+    height: 32px;     /* ширина и высота просмотра, а не картинки */
 }
 
-.intro__text {
+.intro__inner {
     padding: 0 15px;
 }
 
@@ -268,11 +262,11 @@ font-size: 30px;
     text-indent: 1.5em;
 }
 
-.сompany__text p {
+.company__p {
     display: inline;  
 }
 
-.сompany__text .p_purpur {
+.company__p_purpur {
     display: inline;
     color: #7b699a;
     font-weight: 700;
@@ -328,20 +322,20 @@ font-size: 30px;
     text-decoration: none;
 }
 
-.about__link:hover .about__link__text{
+.about__link:hover .link-about__text{
     font-size: 15px;
 
     transition: 0.3s;
 }
 
-.about__link:hover .about__link__arrow{
+.about__link:hover .link-about__arrow{
     width: 13px;
     height: 8px; 
 
     transition: 0.3s;
 }
 
-.about__link__text {
+.link-about__text {
     margin-right: 5px;
 
     font-size: 13px;
@@ -354,17 +348,17 @@ font-size: 30px;
     transition: 0.3s;
 }
 
-.about__link__arrow {
+.link-about__arrow {
    width: 11px;
    height: 7px; 
 }
 
-.featured{
+.cooperation{
     width: 100%;
     margin-bottom: 50px;
 }
 
-.featured__upper {
+.featured {
     display: flex;
     justify-content: space-between;
     margin-bottom: 36px;
@@ -381,7 +375,7 @@ font-size: 30px;
     white-space: nowrap;
 }
 
-.featured__text__bold {
+.featured__text_bold {
     display: inline;
     font-weight: 700;
 }
@@ -389,21 +383,20 @@ font-size: 30px;
 .featured__border{
     width: 68%;
     position: relative;
-    float: right;
-
 }
 
-.featured__border__inner{
+.border-featured__inner{
     position: absolute;
     right: 0;
-    top: 55%;
-    transform: translate3d(0,-50%,0);
+
+    bottom: 50%;
+    /* transform: translate3d(0,-50%,0); */
     width: 100%;
 
     border-top: 1px #e1e1e1 dotted;
 }
 
-.featured__border__inner::before {
+.border-featured__inner::before {
     content: '';
     display: block;
 
@@ -416,7 +409,7 @@ font-size: 30px;
     border-top: 1px #e1e1e1 dotted;
 }
 
-.featured__border__inner::after {
+.border-featured__inner::after {
     content: '';
     display: block;
 
@@ -429,7 +422,7 @@ font-size: 30px;
     border-top: 1px #e1e1e1 dotted;
 }
 
-.featured__partners{
+.partners{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -501,7 +494,7 @@ font-size: 30px;
 
 }
 
-.footer__social__item {
+.social-footer__item{
     cursor: pointer;
     width: 30px;
     height: 30px;

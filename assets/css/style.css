@@ -1,5 +1,4 @@
 
-	
 
 body {
 font-size: 30px;
@@ -14,14 +13,14 @@ font-size: 30px;
   opacity: 0.3;
 } */
 
-.page {
+ .page {
     margin: 0 auto;
     width: 100%;
     height: auto;
     position: absolute;
-}
+} 
 
-.page::before {
+/* .page::before {
     content: '';
 
     position: absolute;
@@ -31,7 +30,7 @@ font-size: 30px;
     height: 10px;
 
     background-color: #7b699a;
-}
+} */
 
 .page::after {
     content: '';
@@ -45,17 +44,42 @@ font-size: 30px;
     background-color: #7b699a;
 }
 
-.conteiner {
+.container {
+    position: relative;
     margin: 0 auto;
 
     width: 78.5%;
     max-width: 1020px;
 }
 
-.header {
-    margin: 40px 0 25px 0;
+.header::before {
+    content: '';
+
+    position: absolute;
+    top:0;
 
     width: 100%;
+    height: 10px;
+
+    background-color: #7b699a;
+}
+
+.header {
+    position: fixed;
+    top:0;
+    left: 0px;
+    right: 0px;
+
+    width: 100%;
+    z-index: 20;
+
+    background-color: #ffffff;
+}
+
+.header__inner {
+    width: 78.5%;
+    max-width: 1020px;
+    margin: 27px auto 0;
 
     display: flex;
     justify-content: space-between;
@@ -79,10 +103,17 @@ font-size: 30px;
 }
 
 .nav {
-    display: flex;
+    /* position: absolute;
+    right: 0;
+    top:0;
+    top: 50%;
+transform: translate(0,-50%); */
+
+
+    display: block;
 
     align-items: center; 
-    margin-bottom: 11px;
+    /* margin-bottom: 11px; */
 }
 
 .nav__link {
@@ -116,34 +147,125 @@ font-size: 30px;
     transition: 0.5s;
 }
 
+.burger{
+    display: none;
+}
+
+.b1, .b2, .b3 {
+    width: 36px;
+    height: 5px;
+    background-color: #ebd5ff;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.change .b1 {
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+.change .b3 {
+    transform: rotate(45deg) translate(-8px, -5px);
+}
+.change .b2 {opacity: 0;}
+
+
+
+
 /* intro */
 
 .intro{
     position: relative;
 
     display: flex;
-
     align-items: center;
     justify-content:center;
 
     text-align: center;
 
-    margin: 0 auto;
-
+    /* margin:  0 auto; */
+    margin: 125px 0 0 0;
     width: 100%;
     height: 70vh;
     max-height: 485px;
 
     background-color: #51585e;
-    background-image: url("../img/intro/intro__background.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+}
+
+intro__slaider{
+    margin: 0 auto;
+    background-color: #fd0707;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+intro__item {
+    margin: 0 auto;
+    background-color: #f014d2;
+    position: relative;
 }
 
 
-/* arrow  intro */
 
+.intro__img {
+    display: block;
+    position: absolute;
+    top:0;
+    right: 0;
+    bottom: 0;
+    left:0;
+    margin: auto;
+
+    width: 100%;
+    height: 100%;
+
+        /* Элемент меняет размер так, чтобы заполнить блок 
+        и сохранить пропорции: */
+    object-fit: cover;
+}
+
+.intro__content {
+
+    display: block;
+    position: absolute;
+
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%); 
+
+
+    width: 80%;
+    height: auto;
+
+    padding: 0 15px;
+    z-index: 10;
+}
+
+.intro__title {
+    /* font-size: 7.8em;  */
+    font-size: 117px;
+    line-height: 75px;
+    font-weight: 400;
+    color: #fbfbfb;  
+    text-shadow: 5px 5px #292a35;
+    font-family: 'Lucida Calligraphy', sans-serif;
+}
+ 
+
+.intro__subtitle {
+    font-size: 31px;
+    line-height: 75px;
+    font-weight:700;
+    font-style: italic;
+    color: #ffffff;  
+    text-shadow: 5px 5px #292a35;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+
+
+
+
+/* arrow  intro */
 
 .arrow {
     position: absolute;
@@ -178,34 +300,15 @@ font-size: 30px;
     height: 32px;     /* ширина и высота просмотра, а не картинки */
 }
 
-.intro__inner {
-    padding: 0 15px;
-}
 
-.intro__title {
-    display: block;
 
-    /* font-size: 7.8em;  */
-    font-size: 117px;
-    line-height: 75px;
-    font-weight: 400;
-    color: #fbfbfb;  
-    text-shadow: 5px 5px #292a35;
-    font-family: 'Lucida Calligraphy', sans-serif;
-}
- 
 
-.intro__subtitle {
-    display: block;
 
-    font-size: 31px;
-    line-height: 75px;
-    font-weight:700;
-    font-style: italic;
-    color: #ffffff;  
-    text-shadow: 5px 5px #292a35;
-    font-family: 'Century Gothic', sans-serif;
-}
+
+
+
+
+/* сompany */
 
 .сompany {
     margin-top: 40px;

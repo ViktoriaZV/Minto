@@ -17,6 +17,11 @@
     .nav {
         display: none;
     }
+    .burger{
+        display: block;
+    }
+
+
     .conteiner {
         width: 85%;
     }

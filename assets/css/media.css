@@ -12,7 +12,21 @@
     }
 }
 
+@media (min-width:991px) {
+    .header__inner_mobile {
+        display: none !important;
+    }
+
+    .header_opened {
+        height: initial !important;
+    }
+}
+
+
 @media (max-width:990px) {
+    .nav__link {
+        line-height: 55px;
+    }
 
     .nav {
         display: none;
@@ -61,7 +75,7 @@
     }
 
     .header {
-        margin: 26px 0 11px 0;
+        margin: 0 0 11px 0;
     }
 
     .logo {

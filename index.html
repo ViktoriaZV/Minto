@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,132 +10,174 @@
   <link rel="stylesheet" href="assets/css/media.css">
   <title>Minto</title>
 </head>
+
 <body>
   <!-- <img src="47.jpg" class="model"> -->
 
   <div class="page">
 
     <header class="header" id="menu">
+      <!-- header__inner -->
       <div class="header__inner">
 
-      <div class="logo">
-        <div class="logo__img">
-          <img src="assets/img/header/logo.png" alt="logo">
+        <div class="logo">
+          <div class="logo__img">
+            <img src="assets/img/header/logo.png" alt="logo">
+          </div>
+          <div class="logo__text">
+            Minto
+          </div>
+        </div> <!-- logo -->
+
+        <!-- desktop navigation -->
+        <nav class="nav">
+
+          <a class="nav__link" href="#">
+            <svg class="nav__img" width="21px" height="20px">
+              <path fill-rule="evenodd"
+                d="M17.697,10.653 L17.697,19.999 L12.763,19.999 L12.763,12.372 L8.182,12.372 L8.182,19.999 L3.302,19.999 L3.302,10.653 L-0.005,10.653 L10.514,0.001 L21.005,10.653 L17.697,10.653 Z" />
+            </svg>
+            <div class="nav__text"> Home </div>
+          </a>
+
+          <a class="nav__link" href="#">
+            <svg class="nav__img" width="18px" height="19px">
+              <path fill-rule="evenodd"
+                d="M8.250,0.037 C8.250,0.037 7.575,-0.000 9.638,-0.000 C12.787,-0.000 13.162,3.599 13.162,3.599 C13.162,3.599 13.200,7.385 13.200,8.275 C13.200,9.166 11.697,9.762 11.963,9.500 C12.000,9.463 11.963,11.875 11.963,11.875 L18.000,16.625 L18.000,19.000 L0.044,19.000 L0.007,16.662 L6.000,11.838 L6.000,9.500 C6.000,9.500 4.800,9.389 4.800,8.275 C4.800,7.162 4.800,3.599 4.800,3.599 C4.800,3.599 5.250,0.037 8.250,0.037 Z" />
+            </svg>
+            <div class="nav__text"> About Us </div>
+          </a>
+
+          <a class="nav__link" href="#">
+            <svg class="nav__img" width="20px" height="20px">
+              <path fill-rule="evenodd"
+                d="M20.000,8.755 L20.000,11.245 L17.337,11.245 C17.139,12.426 16.667,13.505 15.983,14.429 L17.402,15.865 L15.741,17.509 L14.320,16.072 C13.423,16.713 12.383,17.156 11.250,17.351 L11.250,20.000 L8.750,20.000 L8.750,17.357 C7.581,17.166 6.509,16.712 5.589,16.048 L4.151,17.470 L2.508,15.808 L3.931,14.401 C3.258,13.483 2.796,12.413 2.601,11.245 L-0.000,11.245 L-0.000,8.755 L2.604,8.755 C2.806,7.582 3.280,6.511 3.963,5.594 L2.598,4.213 L4.259,2.569 L5.627,3.953 C6.539,3.304 7.598,2.864 8.750,2.676 L8.750,-0.000 L11.250,-0.000 L11.250,2.682 C12.422,2.884 13.490,3.356 14.408,4.033 L15.849,2.607 L17.492,4.269 L16.055,5.691 C16.698,6.586 17.139,7.625 17.333,8.755 L20.000,8.755 ZM10.000,5.097 C7.239,5.097 5.000,7.327 5.000,10.078 C5.000,12.828 7.239,15.058 10.000,15.058 C12.761,15.058 15.000,12.828 15.000,10.078 C15.000,7.327 12.761,5.097 10.000,5.097 ZM10.000,13.852 C7.907,13.852 6.211,12.162 6.211,10.078 C6.211,7.993 7.907,6.303 10.000,6.303 C12.093,6.303 13.789,7.993 13.789,10.078 C13.789,12.162 12.093,13.852 10.000,13.852 ZM10.000,7.607 C8.630,7.607 7.519,8.713 7.519,10.078 C7.519,11.442 8.630,12.549 10.000,12.549 C11.370,12.549 12.481,11.442 12.481,10.078 C12.481,8.713 11.370,7.607 10.000,7.607 Z" />
+            </svg>
+            <div class="nav__text">Services</div>
+          </a>
+
+          <a class="nav__link" href="#">
+            <svg class="nav__img" width="20px" height="14px">
+              <path fill-rule="evenodd"
+                d="M15.000,7.018 L19.997,2.307 L20.000,11.698 L15.000,7.018 ZM-0.000,-0.000 L19.953,-0.000 L10.000,9.434 L-0.000,-0.000 ZM-0.000,11.771 L-0.000,2.265 L5.000,7.018 L-0.000,11.771 ZM10.000,12.063 L13.737,8.147 L19.453,14.000 L0.508,14.000 L6.224,8.187 L10.000,12.063 Z" />
+            </svg>
+            <div class="nav__text">Contact Us</div>
+          </a>
+
+        </nav>
+
+        <div class="burger" onclick="burgerMenu(this)">
+          <div class="b1"></div>
+          <div class="b2"></div>
+          <div class="b3"></div>
         </div>
-        <div class="logo__text">
-          Minto
-        </div>
-      </div>  <!-- logo -->
 
-      <nav class="nav" id="nav">
-
-        <a class="nav__link" href="#"> 
-          <svg class="nav__img"
-            width="21px" height="20px">
-            <path fill-rule="evenodd"   
-            d="M17.697,10.653 L17.697,19.999 L12.763,19.999 L12.763,12.372 L8.182,12.372 L8.182,19.999 L3.302,19.999 L3.302,10.653 L-0.005,10.653 L10.514,0.001 L21.005,10.653 L17.697,10.653 Z"/>
-          </svg>
-          <div class="nav__text"> Home </div>
-        </a>
-
-        <a class="nav__link" href="#"> 
-          <svg class="nav__img"
-            width="18px" height="19px">
-            <path fill-rule="evenodd"  
-            d="M8.250,0.037 C8.250,0.037 7.575,-0.000 9.638,-0.000 C12.787,-0.000 13.162,3.599 13.162,3.599 C13.162,3.599 13.200,7.385 13.200,8.275 C13.200,9.166 11.697,9.762 11.963,9.500 C12.000,9.463 11.963,11.875 11.963,11.875 L18.000,16.625 L18.000,19.000 L0.044,19.000 L0.007,16.662 L6.000,11.838 L6.000,9.500 C6.000,9.500 4.800,9.389 4.800,8.275 C4.800,7.162 4.800,3.599 4.800,3.599 C4.800,3.599 5.250,0.037 8.250,0.037 Z"/>
-          </svg>
-          <div class="nav__text"> About Us </div>
-        </a>
-
-        <a class="nav__link" href="#"> 
-          <svg class="nav__img"
-            width="20px" height="20px">
-            <path fill-rule="evenodd"  
-            d="M20.000,8.755 L20.000,11.245 L17.337,11.245 C17.139,12.426 16.667,13.505 15.983,14.429 L17.402,15.865 L15.741,17.509 L14.320,16.072 C13.423,16.713 12.383,17.156 11.250,17.351 L11.250,20.000 L8.750,20.000 L8.750,17.357 C7.581,17.166 6.509,16.712 5.589,16.048 L4.151,17.470 L2.508,15.808 L3.931,14.401 C3.258,13.483 2.796,12.413 2.601,11.245 L-0.000,11.245 L-0.000,8.755 L2.604,8.755 C2.806,7.582 3.280,6.511 3.963,5.594 L2.598,4.213 L4.259,2.569 L5.627,3.953 C6.539,3.304 7.598,2.864 8.750,2.676 L8.750,-0.000 L11.250,-0.000 L11.250,2.682 C12.422,2.884 13.490,3.356 14.408,4.033 L15.849,2.607 L17.492,4.269 L16.055,5.691 C16.698,6.586 17.139,7.625 17.333,8.755 L20.000,8.755 ZM10.000,5.097 C7.239,5.097 5.000,7.327 5.000,10.078 C5.000,12.828 7.239,15.058 10.000,15.058 C12.761,15.058 15.000,12.828 15.000,10.078 C15.000,7.327 12.761,5.097 10.000,5.097 ZM10.000,13.852 C7.907,13.852 6.211,12.162 6.211,10.078 C6.211,7.993 7.907,6.303 10.000,6.303 C12.093,6.303 13.789,7.993 13.789,10.078 C13.789,12.162 12.093,13.852 10.000,13.852 ZM10.000,7.607 C8.630,7.607 7.519,8.713 7.519,10.078 C7.519,11.442 8.630,12.549 10.000,12.549 C11.370,12.549 12.481,11.442 12.481,10.078 C12.481,8.713 11.370,7.607 10.000,7.607 Z"/>
-          </svg>
-          <div class="nav__text">Services</div>
-        </a>
-
-        <a class="nav__link" href="#"> 
-          <svg class="nav__img"
-            width="20px" height="14px">
-            <path fill-rule="evenodd"  
-            d="M15.000,7.018 L19.997,2.307 L20.000,11.698 L15.000,7.018 ZM-0.000,-0.000 L19.953,-0.000 L10.000,9.434 L-0.000,-0.000 ZM-0.000,11.771 L-0.000,2.265 L5.000,7.018 L-0.000,11.771 ZM10.000,12.063 L13.737,8.147 L19.453,14.000 L0.508,14.000 L6.224,8.187 L10.000,12.063 Z"/>
-          </svg>
-          <div class="nav__text">Contact Us</div>
-        </a>
-
-      </nav>
-
-
-      <div class="burger" onclick="burgerMenu(this)">
-        <div class="b1"></div>
-        <div class="b2"></div>
-        <div class="b3"></div>
       </div>
+      <!-- header__inner_mobile -->
+      <div class="header__inner_mobile">
+        <!-- mobile navigation -->
+        <nav class="nav_mobile">
+          <a class="nav__link" href="#">
+            <svg class="nav__img" width="21px" height="20px">
+              <path fill-rule="evenodd"
+                d="M17.697,10.653 L17.697,19.999 L12.763,19.999 L12.763,12.372 L8.182,12.372 L8.182,19.999 L3.302,19.999 L3.302,10.653 L-0.005,10.653 L10.514,0.001 L21.005,10.653 L17.697,10.653 Z" />
+            </svg>
+            <div class="nav__text"> Home </div>
+          </a>
 
-    
-      </div>  <!-- header__inner -->
+          <a class="nav__link" href="#">
+            <svg class="nav__img" width="18px" height="19px">
+              <path fill-rule="evenodd"
+                d="M8.250,0.037 C8.250,0.037 7.575,-0.000 9.638,-0.000 C12.787,-0.000 13.162,3.599 13.162,3.599 C13.162,3.599 13.200,7.385 13.200,8.275 C13.200,9.166 11.697,9.762 11.963,9.500 C12.000,9.463 11.963,11.875 11.963,11.875 L18.000,16.625 L18.000,19.000 L0.044,19.000 L0.007,16.662 L6.000,11.838 L6.000,9.500 C6.000,9.500 4.800,9.389 4.800,8.275 C4.800,7.162 4.800,3.599 4.800,3.599 C4.800,3.599 5.250,0.037 8.250,0.037 Z" />
+            </svg>
+            <div class="nav__text"> About Us </div>
+          </a>
 
+          <a class="nav__link" href="#">
+            <svg class="nav__img" width="20px" height="20px">
+              <path fill-rule="evenodd"
+                d="M20.000,8.755 L20.000,11.245 L17.337,11.245 C17.139,12.426 16.667,13.505 15.983,14.429 L17.402,15.865 L15.741,17.509 L14.320,16.072 C13.423,16.713 12.383,17.156 11.250,17.351 L11.250,20.000 L8.750,20.000 L8.750,17.357 C7.581,17.166 6.509,16.712 5.589,16.048 L4.151,17.470 L2.508,15.808 L3.931,14.401 C3.258,13.483 2.796,12.413 2.601,11.245 L-0.000,11.245 L-0.000,8.755 L2.604,8.755 C2.806,7.582 3.280,6.511 3.963,5.594 L2.598,4.213 L4.259,2.569 L5.627,3.953 C6.539,3.304 7.598,2.864 8.750,2.676 L8.750,-0.000 L11.250,-0.000 L11.250,2.682 C12.422,2.884 13.490,3.356 14.408,4.033 L15.849,2.607 L17.492,4.269 L16.055,5.691 C16.698,6.586 17.139,7.625 17.333,8.755 L20.000,8.755 ZM10.000,5.097 C7.239,5.097 5.000,7.327 5.000,10.078 C5.000,12.828 7.239,15.058 10.000,15.058 C12.761,15.058 15.000,12.828 15.000,10.078 C15.000,7.327 12.761,5.097 10.000,5.097 ZM10.000,13.852 C7.907,13.852 6.211,12.162 6.211,10.078 C6.211,7.993 7.907,6.303 10.000,6.303 C12.093,6.303 13.789,7.993 13.789,10.078 C13.789,12.162 12.093,13.852 10.000,13.852 ZM10.000,7.607 C8.630,7.607 7.519,8.713 7.519,10.078 C7.519,11.442 8.630,12.549 10.000,12.549 C11.370,12.549 12.481,11.442 12.481,10.078 C12.481,8.713 11.370,7.607 10.000,7.607 Z" />
+            </svg>
+            <div class="nav__text">Services</div>
+          </a>
 
+          <a class="nav__link" href="#">
+            <svg class="nav__img" width="20px" height="14px">
+              <path fill-rule="evenodd"
+                d="M15.000,7.018 L19.997,2.307 L20.000,11.698 L15.000,7.018 ZM-0.000,-0.000 L19.953,-0.000 L10.000,9.434 L-0.000,-0.000 ZM-0.000,11.771 L-0.000,2.265 L5.000,7.018 L-0.000,11.771 ZM10.000,12.063 L13.737,8.147 L19.453,14.000 L0.508,14.000 L6.224,8.187 L10.000,12.063 Z" />
+            </svg>
+            <div class="nav__text">Contact Us</div>
+          </a>
 
-  </header>  <!-- header -->
+        </nav>
+      </div> 
+    </header> <!-- header -->
+
+    <!-- mobile menu body as separate block -->
+    <!-- <nav class="mobile-menu"></nav> -->
 
 
     <div class="container">
 
-      
+
 
       <section class="intro">
 
-        <div class="intro__slaider">  
-          
+        <div class="intro__slaider">
+
 
           <div class="intro__item">
             <img class="intro__img" src="assets/img/intro/intro__background.png">
-            
+
             <div class="intro__content">
               <h1 class="intro__title">
                 Minto
               </h1>
               <h2 class="intro__subtitle">
-                A minimal Web Design  from cssauthor.com
+                A minimal Web Design from cssauthor.com
               </h2>
             </div>
-          </div> <!--intro__item -->
-  
+          </div>
+          <!--intro__item -->
+
           <div class="intro__item">
             <img class="intro__img" src="assets/img/intro/background2.jpg">
             <div class="intro__content">
               <h1 class="intro__title">2</h1>
               <h2 class="intro__subtitle">minimal</h2>
             </div>
-          </div> <!--intro__item -->
-  
+          </div>
+          <!--intro__item -->
+
           <div class="intro__item">
             <img class="intro__img" src="assets/img/intro/background3.jpg">
             <div class="intro__content">
               <h1 class="intro__title">3</h1>
               <h2 class="intro__subtitle">Web Design</h2>
             </div>
-          </div> <!--intro__item -->
-  
+          </div>
+          <!--intro__item -->
+
           <div class="intro__item">
             <img class="intro__img" src="assets/img/intro/background4.jpg">
             <div class="intro__content">
               <h1 class="intro__title">4</h1>
               <h2 class="intro__subtitle">cssauthor.com</h2>
             </div>
-          </div> <!--intro__item -->
-        </div> <!--intro__slaider -->
+          </div>
+          <!--intro__item -->
+        </div>
+        <!--intro__slaider -->
 
         <div class="arrow arrow_left" onclick="previous()">
           <img class="arrow__img" src="assets/img/intro/arrow__svg__left.svg" alt="arrow">
-        </div> <!--arrow__left -->
+        </div>
+        <!--arrow__left -->
 
         <div class="arrow arrow_right" onclick="next()">
           <img class="arrow__img" src="assets/img/intro/arrow__svg__right.svg" alt="arrow">
-        </div> <!--arrow_right -->
+        </div>
+        <!--arrow_right -->
 
 
 
@@ -144,13 +187,15 @@
       <section class="сompany">
         <span class="сompany__text">
           <p class="company__p company__p_purpur"> Сompany to create,</p>
-          <p class="company__p"> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="company__p"> consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+            magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+            commodo consequat.</p>
         </span>
       </section>
 
       <section class="about">
         <div class="about__img">
-          <img src="assets/img/about/about.png"  alt="">
+          <img src="assets/img/about/about.png" alt="">
         </div>
 
         <div class="about__content">
@@ -158,22 +203,29 @@
             About us
           </div>
           <div class="about__text">
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+            sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem.
           </div>
         </div>
 
         <a class="about__link" href="#">
           <span class="link-about__text"> Read more</span>
-          <img class="link-about__arrow" src="assets/img/about/about__link__arrow.png"> 
+          <img class="link-about__arrow" src="assets/img/about/about__link__arrow.png">
           </img>
         </a>
 
       </section> <!-- about -->
-      
+
       <section class="cooperation">
 
         <div class="featured">
-          <span class="featured__text"> <p class="featured__text_bold">Where</p>  We Have Been Featured</span>
+          <span class="featured__text">
+            <p class="featured__text_bold">Where</p> We Have Been Featured
+          </span>
           <div class="featured__border">
             <div class="border-featured__inner"></div>
           </div>
@@ -186,32 +238,33 @@
           <a class="partners__item" href="#"> <img src="assets/img/featured/4BusinessWeek.png" alt="BusinessWeek"> </a>
         </div>
 
-      </section>  <!-- cooperation -->
+      </section> <!-- cooperation -->
 
-     
 
-    </div>  <!-- .container -->
+
+    </div> <!-- .container -->
 
     <footer class="footer">
 
       <div class="footer__inner">
-        
-        <span class="footer__text"> 
-          <p>&copy</p> 
+
+        <span class="footer__text">
+          <p>&copy</p>
           Copyright 2010 - All rights reserved
         </span>
 
         <div class="footer__social">
           <img class="social-footer__item" src="assets/img/footer/facebook.svg" alt="facebook">
-          <img class="social-footer__item" src="assets/img/footer/Twitter.svg" alt="Twitter"> 
+          <img class="social-footer__item" src="assets/img/footer/Twitter.svg" alt="Twitter">
         </div> <!-- footer__social -->
 
-      </div>  <!-- footer__inner -->
+      </div> <!-- footer__inner -->
 
     </footer>
 
-  </div>  <!-- .page -->
+  </div> <!-- .page -->
 
-  <script src="assets/js/file.js" ></script>
+  <script src="assets/js/file.js"></script>
 </body>
+
 </html>
